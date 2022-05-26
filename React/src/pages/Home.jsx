@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import HeroCard from "../components/HeroCard";
 
 const Home = () => {
   const [data, setData] = useState([
@@ -18,11 +19,11 @@ const Home = () => {
   },[])
 
   return (
-    <div>
+    <div className="container">
+      <h1>Heroes</h1>
       {/* For each hero, show Hero component with data */}
       { data.map((hero) => (
-          // <HeroCard name={data.name} alias={data.alias}/>
-            <h1> {hero.name} {hero.alias} </h1>
+           <HeroCard name={hero.name} alias={hero.alias}/>
           )) 
       }
     </div>

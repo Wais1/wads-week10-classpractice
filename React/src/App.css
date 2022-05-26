@@ -25,3 +25,20 @@ a {
   margin: 10px;
   font-size: 25px;
 }
+
+.container {
+  padding: 10px;
+  margin: 20px;
+}
+
+.card {
+  max-width: 400px;
+  background-color: rgb(194, 228, 240);
+  padding: 15px;
+  border-radius:5%;
+
+}
+
+.subtitle {
+  font-weight:bold;
+}

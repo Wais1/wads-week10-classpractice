@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -83,10 +84,20 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# mongodb://localhost:27017
+
+# Connecting the database to MongoDB using djongo
+
+"""
+Connects to mongodb atlas with username admin and password admin. All IPs allowed to access
+"""
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'Cluster0',
+        'CLIENT': {
+            'host': 'mongodb+srv://admin:admin@cluster0.vdkbd.mongodb.net/?retryWrites=true&w=majority'
+        }
     }
 }
 
