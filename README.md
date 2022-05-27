@@ -3,14 +3,14 @@ All code that necessary for the class activity on week 10
 
 Django Procedure:
 
-Go into Django directory: cd Django
-Create virtual environment: python3 -m venv venv
-source venv/bin/activate
-Install necessary packages: pip install -r requirement.txt
-Launch server: python manage.py runserver
+1. Go into Django directory: cd Django
+2. Create virtual environment: python3 -m venv venv
+3. source venv/bin/activate
+4. Install necessary packages: pip install -r requirement.txt
+5. Launch server: python manage.py runserver
 
 React Procedure:
 
-Go into React directory: cd React
-Install necessary packages: npm install
-Run server in localhost: npm start
+1. Go into React directory: cd React
+2. Install necessary packages: npm install
+3. Run server in localhost: npm start
