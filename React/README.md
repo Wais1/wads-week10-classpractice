@@ -3,7 +3,7 @@ Django Procedure:
 2. Create virtual environment:
 python3 -m venv venv
 3. source venv/bin/activate
-4. Install necessary packages: pip install -r requirements.txt
+4. Install necessary packages: pip install -r requirement.txt
 5. Launch server: python manage.py runserver
 
 Note:
