@@ -29,19 +29,21 @@ const CreatePost = () => {
 
   return (
     <>
-       <h2>Create Post</h2>
-       <div className="container">
+      <div className="container">
         <form className="create" onSubmit={handleSubmit}>
-          <label >Hero name:</label>
+          <h1>Create Post</h1>
+          <label>Hero name</label>
           <input 
+            placeholder="E.g Peter Parker"
             className="entry"
             type="text" 
             required 
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <label>Hero alias:</label>
+          <label>Hero alias</label>
           <textarea
+            placeholder="E.g Spiderman"
             className="entry"
             required
             value={alias}

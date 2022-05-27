@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>Heroes</h1>
+      <h1 className="heading">Heroes</h1>
       <div className="container">
         {/* For each hero, show Hero component with data */}
         { data.map((hero) => (

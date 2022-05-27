@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroCard({name, alias}) {
   return (
-    <div className='container'>
+
         <div className='card'>
             <div className='title'>
                 <p className='subtitle'>Name</p>
@@ -13,7 +13,7 @@ function HeroCard({name, alias}) {
                 <p className='name'>{alias}</p>
             </div>
         </div>
-    </div>
+
   )
 }
 
