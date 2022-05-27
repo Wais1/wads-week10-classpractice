@@ -5,8 +5,8 @@ import HeroCard from "../components/HeroCard";
 const Home = () => {
   const [data, setData] = useState([
     {
-      "name": "Test Name",
-      "alias": "Test Alias"
+      "name": "Loading data...",
+      "alias": ""
     },
   ])
 
@@ -19,14 +19,16 @@ const Home = () => {
   },[])
 
   return (
-    <div className="container">
+    <>
       <h1>Heroes</h1>
-      {/* For each hero, show Hero component with data */}
-      { data.map((hero) => (
-           <HeroCard name={hero.name} alias={hero.alias}/>
+      <div className="container">
+        {/* For each hero, show Hero component with data */}
+        { data.map((hero) => (
+          <HeroCard name={hero.name} alias={hero.alias}/>
           )) 
-      }
-    </div>
+        }
+      </div>
+    </>
   );
 }
 

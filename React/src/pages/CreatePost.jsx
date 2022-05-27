@@ -29,11 +29,12 @@ const CreatePost = () => {
 
   return (
     <>
-       <div className="create">
-        <h2>Create Post</h2>
-        <form onSubmit={handleSubmit}>
-          <label>Hero name:</label>
+       <h2>Create Post</h2>
+       <div className="container">
+        <form className="create" onSubmit={handleSubmit}>
+          <label >Hero name:</label>
           <input 
+            className="entry"
             type="text" 
             required 
             value={name}
@@ -41,6 +42,7 @@ const CreatePost = () => {
           />
           <label>Hero alias:</label>
           <textarea
+            className="entry"
             required
             value={alias}
             onChange={(e) => setAlias(e.target.value)}

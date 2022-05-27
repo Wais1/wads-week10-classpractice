@@ -4,8 +4,14 @@ function HeroCard({name, alias}) {
   return (
     <div className='container'>
         <div className='card'>
-            <p> <span className='subtitle'>Name: </span>{name}</p>
-            <p><span className='subtitle'>Alias: </span> {alias}</p>
+            <div className='title'>
+                <p className='subtitle'>Name</p>
+                <p className='name'>{name}</p>
+            </div>
+            <div className='title'>
+                <p className='subtitle'>Alias</p>
+                <p className='name'>{alias}</p>
+            </div>
         </div>
     </div>
   )
