@@ -14,9 +14,3 @@ pymongo==3.12.1
 django-cors-headers==3.12.0
 Django==4.0.4
 djangorestframework==3.13.1
-
-
-React Procedure:
-1. Go into React directory: cd React
-2. Install necessary packages: npm install
-3. Run server in localhost: npm start
